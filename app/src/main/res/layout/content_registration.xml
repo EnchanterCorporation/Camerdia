@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ench.jaya.camerdia.registration"
+    android:background="@drawable/logo"
+    tools:showIn="@layout/activity_registration">
+
+
+    <EditText
+        android:id="@+id/edusrname"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:textColorHint="#B0C4DE"
+        android:backgroundTint="#fff"
+        android:hint="User name"
+
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edmai"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edusrname"
+        android:layout_below="@+id/edusrname"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColorHint="#B0C4DE"
+        android:hint="E-mail id"
+        android:backgroundTint="#fff"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edpas"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edmai"
+        android:layout_below="@+id/edmai"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#B0C4DE"
+        android:backgroundTint="#fff"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edconpass"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edpas"
+        android:layout_below="@+id/edpas"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint=" Confirm Password"
+        android:backgroundTint="#fff"
+        android:textColorHint="#B0C4DE"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btreg"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/edconpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="SIGNUP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/tap"
+        android:layout_below="@+id/btreg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Sign in now" />
+</RelativeLayout>

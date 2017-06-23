@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ench.jaya.camerdia.Login"
+    android:background="@drawable/logo"
+android:orientation="vertical"
+    tools:showIn="@layout/activity_login"
+    android:weightSum="1">
+
+
+    <EditText
+        android:id="@+id/lgemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lgpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="10"
+
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lgpass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/example"
+        android:layout_width="190dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:text=" SIGNIN" />
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/example1"
+            android:layout_marginTop="10dp"
+            android:layout_width="190dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            app:text="SIGNUP" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
